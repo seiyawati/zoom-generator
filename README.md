@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Landing page
+/pages/index.js
+
+## genelator
+/pages/genelator/...
+
+## othet components
+/components/...
+
+## image files
+/public/YOUR-DIRECTORY-NAME/...
+
 ## Getting Started
 
 First, run the development server:
