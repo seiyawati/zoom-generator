@@ -1,14 +1,7 @@
 import React from "react";
+// react icons
 import { FaReact, FaTwitterSquare } from 'react-icons/fa';
-import { useRecoilValue } from "recoil";
-import html2canvas from "html2canvas";
-import { makeStyles } from "@material-ui/core/styles";
-import GridItem from "components/generator/TimComponents/components/Grid/GridItem";
-import GridContainer from "components/generator/TimComponents/components/Grid/GridContainer";
-import Card from "components/generator/TimComponents/components/Card/Card";
-import CardBody from "components/generator/TimComponents/components/Card/CardBody";
-import styles from 'components/generator/Card/WallPaperStyle'
-
+// recoil
 import {
   getProfile,
   getSocials,
@@ -16,6 +9,15 @@ import {
   getSkill,
   getSkillLevel,
 } from "components/generator/store";
+import { useRecoilValue } from "recoil";
+// html to canvas
+import html2canvas from "html2canvas";
+// material ui core
+import { makeStyles } from "@material-ui/core/styles";
+import GridItem from "components/generator/TimComponents/components/Grid/GridItem";
+import GridContainer from "components/generator/TimComponents/components/Grid/GridContainer";
+import styles from 'components/generator/Card/WallPaperStyle'
+
 
 // const pattern =  {
 //   pattern1: {
@@ -74,20 +76,21 @@ const WallPaper = () => {
   };
 
   const classes = useStyles();
+  const profile = useRecoilValue(getProfile)
   return (
     <>
     <div id='wall-paper' className={classes.main}>
       <GridContainer>
         <GridItem xs={3}>
           <div>
-            <h1>Name</h1>
-            <h2>Hokkaido University</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h1>{profile.firstName} {profile.lastName}</h1>
+            <h2>{profile.affiliation}</h2>
+            <p>{profile.description}</p>
           </div>
         </GridItem>
         <GridItem xs={6}>
           <div>
-            <h1>Uoooooooooo Hoooooooo!!</h1>
+            <h1>{profile.freespace}</h1>
           </div>
         </GridItem>
         <GridItem xs={3}>

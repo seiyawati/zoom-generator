@@ -3,7 +3,8 @@ const styles = {
     width: '100%',
     backgroundColor: '#444444',
     color: 'white',
-    fontFamily: 'sans-serif' // google fonts をここで使える？
+    fontFamily: 'sans-serif', // google fonts をここで使える？
+    overflowWrap: 'break-word'
   },
   percentBar: {
     width: '50%',
