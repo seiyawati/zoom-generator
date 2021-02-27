@@ -31,7 +31,7 @@ export default function ButtonAppBar() {
       >
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            forsky
+            foresky
           </Typography>
           <Link href="/">
             <Button>
