@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-import React from 'react'
-import { FaReact, FaTwitterSquare } from 'react-icons/fa'
-import { useRecoilValue } from 'recoil'
-import html2canvas from 'html2canvas'
-import { makeStyles } from '@material-ui/core/styles'
-import GridItem from 'components/generator/TimComponents/components/Grid/GridItem'
-import GridContainer from 'components/generator/TimComponents/components/Grid/GridContainer'
-import Card from 'components/generator/TimComponents/components/Card/Card'
-import CardBody from 'components/generator/TimComponents/components/Card/CardBody'
-import styles from 'components/generator/Card/WallPaperStyle'
-import { getProfile, getSocials, getSocialAccounts, getSkill, getSkillLevel } from 'components/generator/store'
-
-const useStyles = makeStyles(styles)
-=======
 import React from "react";
+import { FaReact, FaTwitterSquare } from 'react-icons/fa';
 import { useRecoilValue } from "recoil";
 import html2canvas from "html2canvas";
 import { makeStyles } from "@material-ui/core/styles";
@@ -21,6 +7,7 @@ import GridItem from "components/generator/TimComponents/components/Grid/GridIte
 import GridContainer from "components/generator/TimComponents/components/Grid/GridContainer";
 import Card from "components/generator/TimComponents/components/Card/Card";
 import CardBody from "components/generator/TimComponents/components/Card/CardBody";
+import styles from 'components/generator/Card/WallPaperStyle'
 
 import {
   getProfile,
@@ -53,18 +40,7 @@ import {
 //   },
 // };
 
-const styles = {
-  main: {
-    width: "100%",
-    height: "calc(100vw * 0.45)",
-    backgroundColor: "#444444",
-    color: "white",
-    fontFamily: "sans-serif", // google fonts をここで使える？
-  },
-};
-
 const useStyles = makeStyles(styles);
->>>>>>> 4991a070115bea75c34446cf3d57b13510a00c12
 
 const WallPaper = () => {
   const handleClick = (event) => {
@@ -100,7 +76,6 @@ const WallPaper = () => {
   const classes = useStyles();
   return (
     <>
-<<<<<<< HEAD
     <div id='wall-paper' className={classes.main}>
       <GridContainer>
         <GridItem xs={3}>
@@ -150,14 +125,6 @@ const WallPaper = () => {
       </GridContainer>
     </div>
     <button onClick={handleClick}>download</button>
-=======
-      <div id="wall-paper" className={classes.main}>
-        <div>
-          <h1>body</h1>
-        </div>
-      </div>
-      <button onClick={handleClick}>download</button>
->>>>>>> 4991a070115bea75c34446cf3d57b13510a00c12
     </>
   );
 };
