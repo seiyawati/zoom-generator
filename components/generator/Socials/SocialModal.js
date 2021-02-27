@@ -27,7 +27,6 @@ export default function SocialModal() {
       //id: social.length
     }
     setSocial((social) => [...social, newSocial])
-    return console.log(social)
   }
 
   return (

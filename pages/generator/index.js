@@ -4,6 +4,8 @@ import Profile from 'components/generator/Profile/Profile'
 import SocialModal from 'components/generator/Socials/SocialModal'
 import SkillModal from 'components/generator/Skill/SkillModal'
 import SocialList from 'components/generator/Socials/SocialList'
+import SkillList from 'components/generator/Skill/SkillList'
+import Card from 'components/generator/Card/Card'
 import { getProfile, getSocials, getSocialAccounts, getSkill, getSkillLevel } from 'components/generator/store'
 import { useRecoilValue } from 'recoil'
 
@@ -18,16 +20,8 @@ function Generator() {
             <SocialModal />
             <SocialList />
             <SkillModal />
-            <div>
-              <h1>Skills</h1>
-              {skills.map(({ name, icon}) => {
-                return (
-                  <div>
-                    {icon} {name}
-                  </div>
-                )
-              })}
-            </div>
+            <SkillList />
+            <Card />
         </div>
     )
 }

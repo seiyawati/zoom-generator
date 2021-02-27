@@ -5,7 +5,8 @@ const initProfileState = {
     firstName: '',
     lastName: '',
     affiliation: '',
-    description: ''
+    description: '',
+    freespace: ''
 }
 export const profileState = atom({
     key: 'profileState',

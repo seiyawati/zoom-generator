@@ -19,6 +19,7 @@ const SkillSelector = ({ name, icon, selected, onhandleSelect }) => {
 
 export default function SkillModal() {
   const [skills, setSkills] = useRecoilState(skillState)
+  const [level, setSkillLevel] = useRecoilState(skillLevel)
   const onhandleSelect = (event, name, icon) => {
     event.preventDefault()
     const newSkill = {
@@ -27,7 +28,9 @@ export default function SkillModal() {
       //id: social.length
     }
     setSkills((skills) => [...skills, newSkill])
-    return console.log(skills)
+    setSkillLevel((level) => {
+      return { ...level, [name]: 0 }
+    })
   }
 
   return (
