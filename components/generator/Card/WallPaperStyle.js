@@ -7,7 +7,6 @@ const styles = {
     overflowWrap: 'break-word'
   },
   percentBar: {
-    width: '50%',
     height: '10px',
     backgroundColor: 'red'
   }

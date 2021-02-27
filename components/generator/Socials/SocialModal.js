@@ -1,8 +1,13 @@
 import React from 'react'
-import SimpleModal from 'components/generator/Modal/Modal'
-import socialData from 'components/generator/Socials/social.data'
+// recoil
 import { useRecoilState } from 'recoil'
 import { socialState } from 'components/generator/store/'
+// react icons
+import { BiAddToQueue } from 'react-icons/bi'
+// material ui components
+import SimpleModal from 'components/generator/Modal/Modal'
+import socialData from 'components/generator/Socials/social.data'
+
 
 
 const SocialSelector = ({ name, icon, selected, onhandleSelect }) => {
@@ -30,7 +35,7 @@ export default function SocialModal() {
   }
 
   return (
-      <SimpleModal openLabel={"Socials"}>
+      <SimpleModal openLabel={<BiAddToQueue />}>
           {socialData.map(({ name, icon }) => {
             const selected = social.find((item) => item.name === name)
             return (

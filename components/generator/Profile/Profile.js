@@ -38,7 +38,7 @@ const useStyles = makeStyles(styles)
 
 function Profile() {
     const [profile, setProfile] = useRecoilState(profileState)
-    const [show, setShow] = React.useState(false)
+    const [show, setShow] = React.useState(true)
     const handleShow = (e) => {
       e.preventDefault()
       setShow(!show)
@@ -59,7 +59,7 @@ function Profile() {
               <CardHeader color="primary">
                 <GridContainer>
                   <GridItem xs={8}>
-                    <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
+                    <h4 className={classes.cardTitleWhite}>Profile</h4>
                     <p className={classes.cardCategoryWhite}>Complete yor profile</p>
                   </GridItem>
                   <GridItem xs={4}>
@@ -153,4 +153,3 @@ function Profile() {
 }
 
 export default Profile
-export { profileState }

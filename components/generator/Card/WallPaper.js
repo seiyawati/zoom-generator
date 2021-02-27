@@ -77,6 +77,10 @@ const WallPaper = () => {
 
   const classes = useStyles();
   const profile = useRecoilValue(getProfile)
+  const skill = useRecoilValue(getSkill)
+  const skillLevel = useRecoilValue(getSkillLevel)
+  const social = useRecoilValue(getSocials)
+  const socialAccount = useRecoilValue(getSocialAccounts)
   return (
     <>
     <div id='wall-paper' className={classes.main}>
@@ -95,32 +99,29 @@ const WallPaper = () => {
         </GridItem>
         <GridItem xs={3}>
           <div>
-            <div>
-              <h2><FaReact /><span>React</span></h2>
-              <div className={classes.percentBar}></div>
-            </div>
-            <div>
-              <h2><FaReact /><span>React</span></h2>
-              <div className={classes.percentBar}></div>
-            </div>
-            <div>
-              <h2><FaReact /><span>React</span></h2>
-              <div className={classes.percentBar}></div>
-            </div>
-            <div>
-              <h2><FaReact /><span>React</span></h2>
-              <div className={classes.percentBar}></div>
-            </div>
-            <div>
-              <h2><FaReact /><span>React</span></h2>
-              <div className={classes.percentBar}></div>
-            </div>
+            {skill.map(({ name, icon }) => {
+              const level = skillLevel[name] * 10
+              console.log(level)
+              return (
+                <div key={name}>
+                  <div>
+                    <h1>{icon} {name}</h1>
+                  </div>
+                  <div className={classes.percentBar} style={{ width: `${level}%` }}></div>
+                </div>
+              )
+            })}
           </div>
           <div>
             <div>
-              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
-              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
-              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
+              {social.map(({ name, icon }) => {
+                const account = socialAccount[name]
+                return (
+                  <div key={name}>
+                    <h3>{icon} {account}</h3>
+                  </div>
+                )
+              })}
             </div>
           </div>
 

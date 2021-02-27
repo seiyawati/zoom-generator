@@ -1,8 +1,12 @@
 import React from 'react'
-import SimpleModal from 'components/generator/Modal/Modal'
-import skillData from 'components/generator/Skill/skill.data'
+// recoil
 import { useRecoilState } from 'recoil'
 import { skillState, skillLevel } from 'components/generator/store/'
+// react icons
+import { BiAddToQueue } from 'react-icons/bi'
+// material components
+import SimpleModal from 'components/generator/Modal/Modal'
+import skillData from 'components/generator/Skill/skill.data'
 
 
 const SkillSelector = ({ name, icon, selected, onhandleSelect }) => {
@@ -34,7 +38,7 @@ export default function SkillModal() {
   }
 
   return (
-      <SimpleModal openLabel={"Skills"}>
+      <SimpleModal openLabel={<BiAddToQueue />}>
           {skillData.map(({ name, icon }) => {
             const selected = skills.find((item) => item.name === name)
             return (
