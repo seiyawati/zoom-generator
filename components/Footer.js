@@ -27,11 +27,13 @@ export default function Footer() {
         label="Twitter"
         icon={<TwitterIcon />}
         style={{ color: "white" }}
-      ></BottomNavigationAction>
+        href="https://twitter.com/geek_pjt"
+      />
       <BottomNavigationAction
         label="GitHub"
         icon={<GitHubIcon />}
         style={{ color: "white" }}
+        href="https://github.com/seiyawati/zoom-generator"
       />
     </BottomNavigation>
   );

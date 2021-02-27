@@ -33,7 +33,7 @@ export default function ButtonAppBar() {
             Site Name
           </Typography>
           <Button>
-            <HomeIcon style={{ color: "white" }} />
+            <HomeIcon style={{ color: "white" }} href="#"/>
           </Button>
           <Button>
             <HelpIcon style={{ color: "white" }} />

@@ -7,7 +7,7 @@ export default function Copyright() {
       variant="body2"
       color="textSecondary"
       align="center"
-      style={{ color: "#e0f2f1", backgroundColor: "#0E5D5D" }}
+      style={{ color: "white", backgroundColor: "#0E5D5D" }}
     >
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
