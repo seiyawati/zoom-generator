@@ -1,4 +1,5 @@
 import React from "react";
+import { FaReact, FaTwitterSquare } from 'react-icons/fa';
 import { useRecoilValue } from "recoil";
 import html2canvas from "html2canvas";
 import { makeStyles } from "@material-ui/core/styles";
@@ -6,6 +7,7 @@ import GridItem from "components/generator/TimComponents/components/Grid/GridIte
 import GridContainer from "components/generator/TimComponents/components/Grid/GridContainer";
 import Card from "components/generator/TimComponents/components/Card/Card";
 import CardBody from "components/generator/TimComponents/components/Card/CardBody";
+import styles from 'components/generator/Card/WallPaperStyle'
 
 import {
   getProfile,
@@ -36,16 +38,6 @@ const pattern =  {
    color: "white",
    fontFamily: "sans-serif",
  },
-};
-
-const styles = {
-  main: {
-    width: "100%",
-    height: "calc(100vw * 0.45)",
-    backgroundColor: "#444444",
-    color: "white",
-    fontFamily: "sans-serif", // google fonts をここで使える？
-  },
 };
 
 const useStyles = makeStyles(styles);
@@ -84,12 +76,55 @@ const WallPaper = () => {
   const classes = useStyles();
   return (
     <>
-      <div id="wall-paper" className={classes.main}>
-        <div>
-          <h1>body</h1>
-        </div>
-      </div>
-      <button onClick={handleClick}>download</button>
+    <div id='wall-paper' className={classes.main}>
+      <GridContainer>
+        <GridItem xs={3}>
+          <div>
+            <h1>Name</h1>
+            <h2>Hokkaido University</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </GridItem>
+        <GridItem xs={6}>
+          <div>
+            <h1>Uoooooooooo Hoooooooo!!</h1>
+          </div>
+        </GridItem>
+        <GridItem xs={3}>
+          <div>
+            <div>
+              <h2><FaReact /><span>React</span></h2>
+              <div className={classes.percentBar}></div>
+            </div>
+            <div>
+              <h2><FaReact /><span>React</span></h2>
+              <div className={classes.percentBar}></div>
+            </div>
+            <div>
+              <h2><FaReact /><span>React</span></h2>
+              <div className={classes.percentBar}></div>
+            </div>
+            <div>
+              <h2><FaReact /><span>React</span></h2>
+              <div className={classes.percentBar}></div>
+            </div>
+            <div>
+              <h2><FaReact /><span>React</span></h2>
+              <div className={classes.percentBar}></div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
+              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
+              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
+            </div>
+          </div>
+
+        </GridItem>
+      </GridContainer>
+    </div>
+    <button onClick={handleClick}>download</button>
     </>
   );
 };
