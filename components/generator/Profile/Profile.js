@@ -47,49 +47,43 @@ function Profile() {
     const classes = useStyles()
 
     return (
-        <div>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={3}>
-              <Card>
-                <CardHeader color="primary">
-                  <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
-                </CardHeader>
-                <CardBody>
-                  <GridContainer>
-                    <GridItem xs={6} sm={6} md={6}>
-                      <CustomInput
-                        labelText="First Name"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                        inputProps={{
-                          type: 'text',
-                          name: 'firstName',
-                          value: profile.firstName,
-                          onChange: (event) => handleInputChange(event, 'firstName')
-                        }}
-                      />
-                    </GridItem>
-                    <GridItem xs={6} sm={6} md={6}>
-                      <CustomInput
-                        labelText="Last Name"
-                        formControlProps={{
-                          fullWidth: true
-                        }}
-                        inputProps={{
-                          type: 'text',
-                          name: 'lastName',
-                          value: profile.lastName,
-                          onChange: (event) => handleInputChange(event, 'lastName')
-                        }}
-                      />
-                    </GridItem>
-                  </GridContainer>
-                </CardBody>
-              </Card>
-            </GridItem>
-          </GridContainer>
-        </div>
+            <Card>
+              <CardHeader color="primary">
+                <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
+              </CardHeader>
+              <CardBody>
+                <GridContainer>
+                  <GridItem xs={6} sm={6} md={6}>
+                    <CustomInput
+                      labelText="First Name"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        type: 'text',
+                        name: 'firstName',
+                        value: profile.firstName,
+                        onChange: (event) => handleInputChange(event, 'firstName')
+                      }}
+                    />
+                  </GridItem>
+                  <GridItem xs={6} sm={6} md={6}>
+                    <CustomInput
+                      labelText="Last Name"
+                      formControlProps={{
+                        fullWidth: true
+                      }}
+                      inputProps={{
+                        type: 'text',
+                        name: 'lastName',
+                        value: profile.lastName,
+                        onChange: (event) => handleInputChange(event, 'lastName')
+                      }}
+                    />
+                  </GridItem>
+                </GridContainer>
+              </CardBody>
+            </Card>
     )
 }
 
