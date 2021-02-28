@@ -46,25 +46,25 @@ export default function Skill() {
   const buttonIcon = show ? <BsFillPlusSquareFill color='white'/> : <AiFillMinusCircle color='white' />
   return (
     <Card>
-              <CardHeader color="danger">
-                <GridContainer>
-                  <GridItem xs={8}>
-                    <h4 className={classes.cardTitleWhite}>Socials</h4>
-                    <p className={classes.cardCategoryWhite}>Select your Socials</p>
-                  </GridItem>
-                  <GridItem xs={4}>
-                    <IconButton  onClick={e => handleShow(e)}>
-                      {buttonIcon}
-                    </IconButton>
-                  </GridItem>
-                </GridContainer>
-              </CardHeader>
-              <CardBody style={showStyle}>
-                <GridContainer>
-                  <SocialModal />
-                  <SocialList />
-                </GridContainer>
-              </CardBody>
-            </Card>
+      <CardHeader color="danger">
+        <GridContainer>
+          <GridItem xs={8}>
+            <h4 className={classes.cardTitleWhite}>Socials</h4>
+            <p className={classes.cardCategoryWhite}>Select your Socials</p>
+          </GridItem>
+          <GridItem xs={4}>
+            <IconButton  onClick={e => handleShow(e)}>
+              {buttonIcon}
+            </IconButton>
+          </GridItem>
+        </GridContainer>
+      </CardHeader>
+      <CardBody style={showStyle}>
+        <GridContainer>
+          <SocialModal />
+          <SocialList />
+        </GridContainer>
+      </CardBody>
+    </Card>
   )
 }

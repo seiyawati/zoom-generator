@@ -8,6 +8,7 @@ import Copyright from "components/Copyright";
 import Profile from 'components/generator/Profile/Profile'
 import Skill from 'components/generator/Skill/Skill'
 import Social from 'components/generator/Socials/Social'
+import Background from 'components/generator/Background/Background'
 import WallPaper from 'components/generator/Card/WallPaper'
 import GridItem from 'components/generator/TimComponents/components/Grid/GridItem'
 import GridContainer from 'components/generator/TimComponents/components/Grid/GridContainer'
@@ -35,6 +36,7 @@ function Generator() {
             <Profile />
             <Skill />
             <Social />
+            <Background />
           </GridItem>
           <CssBaseline />
           <GridItem xs={12} sm={6} md={9}>

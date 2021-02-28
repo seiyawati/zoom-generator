@@ -40,3 +40,10 @@ export const skillLevel = atom({
   key: 'skillLevel',
   default: initSkilllevel
 })
+
+// background style
+const initBackgroundStyle = []
+export const backgroundStyle = atom({
+  key: 'backgroundStyle',
+  default: initBackgroundStyle
+})
