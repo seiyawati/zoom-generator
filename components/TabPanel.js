@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
     display: "flex",
-    height: 224,
+    height: "100%",
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
@@ -78,7 +78,53 @@ export default function VerticalTabs() {
         <Tab label="手順７" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        手順１
+        ・パターンの選択
+        <br />
+        Topページにある4つのレイアウトの内お好きなやつを洗濯して「このパターンを選択」をクリックしてください！
+        <br />
+        <br />
+        ・パターン1
+        <br />
+        <img
+          src="../static/example.png"
+          style={{ width: "300px", height: "200px" }}
+        />
+        <br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standar
+        <br />
+        <br />
+        ・パターン2
+        <br />
+        <img
+          src="../static/example.png"
+          style={{ width: "300px", height: "200px" }}
+        />
+        <br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standar
+        <br />
+        <br />
+        ・パターン3
+        <br />
+        <img
+          src="../static/example.png"
+          style={{ width: "300px", height: "200px" }}
+        />
+        <br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standar
+        <br />
+        <br />
+        ・パターン4
+        <br />
+        <img
+          src="../static/example.png"
+          style={{ width: "300px", height: "200px" }}
+        />
+        <br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standar
       </TabPanel>
       <TabPanel value={value} index={1}>
         手順２
