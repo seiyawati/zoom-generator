@@ -9,7 +9,7 @@ import GridContainer from '../TimComponents/components/Grid/GridContainer';
 
 const style = {
   root: {
-    marginTop: '3rem'
+    marginTop: '1.5rem'
   },
   main: {
     marginTop: '0.7rem'
