@@ -3,18 +3,18 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "components/Header";
 import Footer from "components/Footer";
 import Copyright from "components/Copyright";
+import VerticalTabs from "components/TabPanel";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Help</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <CssBaseline />
       <Header />
-        <h1>使い方</h1>
-
+      <VerticalTabs />
       <Footer />
       <Copyright />
     </div>
