@@ -7,6 +7,7 @@ import Button from "@material-ui/core/Button";
 import HelpIcon from "@material-ui/icons/Help";
 import HomeIcon from "@material-ui/icons/Home";
 import Link from "next/link";
+import MenuItem from "@material-ui/core/MenuItem";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,7 +32,9 @@ export default function ButtonAppBar() {
       >
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            foresky
+            <Link href="/" style={{ textDecoration: "none" }}>
+              <MenuItem style={{ fontSize: "20px" }}>foresky</MenuItem>
+            </Link>
           </Typography>
           <Link href="/">
             <Button>
