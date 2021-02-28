@@ -1,5 +1,5 @@
 import { selector } from 'recoil'
-import { profileState, socialState, socialAccount, skillLevel, skillState } from '.'
+import { profileState, socialState, socialAccount, skillLevel, skillState, backgroundStyle } from '.'
 
 export const getProfile = selector({
     key:"getProfile",
@@ -38,5 +38,13 @@ export const getSkillLevel = selector({
   get: ({get}) => {
     const skillLevels = get(skillLevel)
     return skillLevels
+  }
+})
+
+export const getBackgorundStyle = selector({
+  key: 'getBackgroundStyle',
+  get: ({get}) => {
+    const style = get(backgroundStyle)
+    return style
   }
 })

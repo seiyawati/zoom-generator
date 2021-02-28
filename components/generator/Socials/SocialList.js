@@ -7,8 +7,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton'
+import CustomInput from 'components/generator/TimComponents/components/CustomInput/CustomInput'
 // react icons
-import { BiUpArrow, BiDownArrow, BiTrash } from 'react-icons/bi'
+import { BiTrash } from 'react-icons/bi'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,12 +26,30 @@ const SocialDetails = ({ name, icon, account, handleDelete, handleChange }) => {
 
   return (
     <div>
-      {/* <Grid container justify='center' alignItems='center'>
-        <Grid>
-          <h2 style={{ margin: 0, padding: 0}}>{icon}</h2>
+      <Grid container justify='center' alignItems='center'>
+        <Grid item xs={3}>
+          <h1 style={{ margin: 0, marginTop: '10px', padding: 0}}>{icon}</h1>
         </Grid>
-      </Grid> */}
-      <h1>Hello World</h1>
+        <Grid item xs={6}>
+          <CustomInput
+          labelText="User Name"
+          formControlProps={{
+            fullWidth: true
+          }}
+          inputProps={{
+            type: 'text',
+            name: 'account',
+            value: account,
+            onChange: handleChange
+          }}
+          />
+        </Grid>
+        <Grid item xs={3}>
+          <IconButton onClick={handleDelete}>
+            <BiTrash />
+          </IconButton>
+        </Grid>
+      </Grid>
     </div>
   )
 }
@@ -58,18 +77,18 @@ const SocialList = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={2}>
+      <Grid container justify='center' spacing={2}>
         {social.map(({ name, icon, account }) => {
           return (
-            <Grid item>
+            <Grid item xs={11}>
               <Paper className={classes.paper}>
                 <SocialDetails
                 key={name}
                 name={name}
                 account={account}
                 icon={icon}
-                //handleDelete={(event) => handleDelete(event, name)}
-                //handleChange={(event) => handleChange(event, name)}
+                handleDelete={(event) => handleDelete(event, name)}
+                handleChange={(event) => handleChange(event, name)}
                 />
               </Paper>
             </Grid>

@@ -34,7 +34,7 @@ const SkillDetail = ({ name, icon, handleLevelUp, handleLevelDown, handleDelete 
     <div>
       <Grid container justify='center' alignItems='center'>
         <Grid item xs={4}>
-          <h2 style={{ margin: 0, padding: 0}}>{icon} Lv.{level[name]}</h2>
+          <h2 style={{ margin: 0, padding: 0}}>{icon} <span style={{ fontSize: '0.7em' }} >Lv.{level[name]}</span></h2>
         </Grid>
         <Grid item xs={8}>
           <IconButton onClick={handleLevelUp} disabled={stopLevelUp()}>
