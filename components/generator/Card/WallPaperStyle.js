@@ -5,45 +5,43 @@ const styles = {
     color: 'white',
     fontFamily: 'sans-serif', // google fonts をここで使える？
     fontSize:'30px',
-    //backgroundImage:linearGradient('-90deg', '#fff 50%', 'transparent 50%'),
+    //backgroundImage:'linearGradient(#fff 50%, transparent 50%, transparent 100%)', //横縞(ボーダー)
+    //backgroundImage:'linearGradient(deg= -90, #fff 50%, transparent 50%)', //縦縞(ストライプ)
     //backgroundSize: '14px 14px',
   },
   name: {
     fontSize:'55px',
     marginTop:"50px",
     marginLeft:"20px",
-    //textAlign: center  //center is not defined
+    textAlign:'center'
   },
   affiliation: {
     fontSize:'45/30rem',
     marginTop:"50px",
     marginLeft:"20px",
-    //textAlign: center  //center is not defined
+    textAlign:'center'
   },
   paragraph: {
     fontSize:'20px',
     marginTop:"50px",
     marginLeft:"20px",
-    //textAlign: center  //center is not defined
   },
   phrase: {
     fontSize:'37px',
     marginTop:"10px",
     //marginLeft:"20px",
-    //textAlign: center  //center is not defined
+    textAlign:'center'
   },
   techStackTop: {
     fontSize:'30px',
     //marginBottom:"5px",
     margin:"40px auto 7px 0"
     //marginLeft:"20px",
-    //textAlign: center  //center is not defined
   },
   techStack: {
     fontSize:'30px',
     margin:"7px 0",
     //marginLeft:"20px",
-    //textAlign: center  //center is not defined
   },
   percentBar: {
     width: '30%',
