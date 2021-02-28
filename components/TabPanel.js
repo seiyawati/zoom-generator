@@ -127,7 +127,48 @@ export default function VerticalTabs() {
         industry. Lorem Ipsum has been the industry's standar
       </TabPanel>
       <TabPanel value={value} index={1}>
-        手順２
+        ・プロフィール情報を入力する
+        <br />
+        Profile, Skills, Socialsにしたがってプロフィール情報を入力する。
+        <br />
+        <br />
+        ここから自分の基本情報を入力する↓
+        <br />{" "}
+        <img
+          src="../static/Profile.png"
+          style={{ width: "300px", height: "400px" }}
+        />
+        <br />
+        <br />
+        ここから自分のスキルを選択する↓
+        <br />{" "}
+        <img
+          src="../static/Skills.png"
+          style={{ width: "300px", height: "150px" }}
+        />
+        <br />
+        以下のモダールが表示されるので選択↓
+        <br />{" "}
+        <img
+          src="../static/Skills_list.png"
+          style={{ width: "300px", height: "250px" }}
+        />
+        <br />
+        <br />
+        ここから自分の基本情報を入力する↓
+        <br />{" "}
+        <img
+          src="../static/Socials.png"
+          style={{ width: "300px", height: "150px" }}
+        />
+        <br />
+        <br />
+        以下のモダールが表示されるので選択↓
+        <br />{" "}
+        <img
+          src="../static/Socials.png"
+          style={{ width: "300px", height: "150px" }}
+        />
       </TabPanel>
       <TabPanel value={value} index={2}>
         手順３
