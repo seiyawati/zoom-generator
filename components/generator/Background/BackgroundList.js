@@ -7,7 +7,7 @@ import { backgroundStyle } from 'components/generator/store'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import IconButton from '@material-ui/core/IconButton'
+import RegularButton from 'components/generator/TimComponents/components/CustomButtons/Button'
 // react icons
 import { BiUpArrow, BiDownArrow, BiTrash } from 'react-icons/bi'
 import styles from '../Card/WallPaperStyle';
