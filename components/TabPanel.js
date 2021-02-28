@@ -75,7 +75,6 @@ export default function VerticalTabs() {
         <Tab label="手順４" {...a11yProps(3)} />
         <Tab label="手順５" {...a11yProps(4)} />
         <Tab label="手順６" {...a11yProps(5)} />
-        <Tab label="手順７" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         ・パターンの選択
@@ -129,7 +128,7 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={1}>
         ・プロフィール情報を入力する
         <br />
-        Profile, Skills, Socialsにしたがってプロフィール情報を入力する。
+        名前、学校名、自己紹介、一言コメントを入力する！
         <br />
         <br />
         ここから自分の基本情報を入力する↓
@@ -140,50 +139,100 @@ export default function VerticalTabs() {
         />
         <br />
         <br />
-        ここから自分のスキルを選択する↓
+        背景に反映後↓
         <br />{" "}
         <img
-          src="../static/Skills.png"
-          style={{ width: "300px", height: "150px" }}
-        />
-        <br />
-        以下のモダールが表示されるので選択↓
-        <br />{" "}
-        <img
-          src="../static/Skills_list.png"
-          style={{ width: "300px", height: "250px" }}
-        />
-        <br />
-        <br />
-        ここから自分の基本情報を入力する↓
-        <br />{" "}
-        <img
-          src="../static/Socials.png"
-          style={{ width: "300px", height: "150px" }}
-        />
-        <br />
-        <br />
-        以下のモダールが表示されるので選択↓
-        <br />{" "}
-        <img
-          src="../static/Socials.png"
-          style={{ width: "300px", height: "150px" }}
+          src="../static/Profile2.png"
+          style={{ width: "1200px", height: "500px" }}
         />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        手順３
+        ・スキルを選択する。
+        <br />
+        自分のスキルを選択して、習熟度レベルを設定しよう！
+        <br />
+        <br />
+        ここからスキルを選択する↓
+        <br />{" "}
+        <img
+          src="../static/Skills.png"
+          style={{ width: "500px", height: "300px" }}
+        />
+        <br />
+        <br />
+        スキルレベルを設定しよう↓
+        <br />{" "}
+        <img
+          src="../static/Skills2.png"
+          style={{ width: "400px", height: "500px" }}
+        />
+        <br />
+        <br />
+        背景に反映後↓
+        <br />{" "}
+        <img
+          src="../static/Skills3.png"
+          style={{ width: "1200px", height: "500px" }}
+        />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        手順４
+        ・SNSアカウントを設定しよう。
+        <br />
+        GitHubやTwitterなどのSNSアカウントを登録しよう！
+        <br />
+        <br />
+        ここからアカウントを選択する↓
+        <br />{" "}
+        <img
+          src="../static/Socials.png"
+          style={{ width: "500px", height: "300px" }}
+        />
+        <br />
+        <br />
+        各アカウント名を入力する↓
+        <br />{" "}
+        <img
+          src="../static/Socials2.png"
+          style={{ width: "400px", height: "500px" }}
+        />
+        <br />
+        <br />
+        背景に反映後↓
+        <br />{" "}
+        <img
+          src="../static/Socials3.png"
+          style={{ width: "1200px", height: "500px" }}
+        />
       </TabPanel>
       <TabPanel value={value} index={4}>
-        手順５
+        ・SNSアカウントを設定しよう。
+        <br />
+        GitHubやTwitterなどのSNSアカウントを登録しよう！
+        <br />
+        <br />
+        ここから好きな背景色を選択する↓
+        <br />{" "}
+        <img
+          src="../static/Styles.png"
+          style={{ width: "500px", height: "300px" }}
+        />
+        <br />
+        <br />
+        背景に反映後↓
+        <br />{" "}
+        <img
+          src="../static/Styles2.png"
+          style={{ width: "1200px", height: "500px" }}
+        />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        手順６
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        手順７
+        ・完成形はこんな感じになります↓。
+        <br />
+        <br />{" "}
+        <img
+          src="../static/Complete.png"
+          style={{ width: "1500px", height: "800px" }}
+        />
       </TabPanel>
     </div>
   );
