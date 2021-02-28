@@ -85,7 +85,7 @@ export default function VerticalTabs() {
         ・パターン1
         <br />
         <img
-          src="../static/example.png"
+          src="../static/Template1.png"
           style={{ width: "300px", height: "200px" }}
         />
         <br />
@@ -96,7 +96,7 @@ export default function VerticalTabs() {
         ・パターン2
         <br />
         <img
-          src="../static/example.png"
+          src="../static/Template2.png"
           style={{ width: "300px", height: "200px" }}
         />
         <br />
@@ -107,7 +107,7 @@ export default function VerticalTabs() {
         ・パターン3
         <br />
         <img
-          src="../static/example.png"
+          src="../static/Template3.png"
           style={{ width: "300px", height: "200px" }}
         />
         <br />
@@ -118,7 +118,7 @@ export default function VerticalTabs() {
         ・パターン4
         <br />
         <img
-          src="../static/example.png"
+          src="../static/Template4.png"
           style={{ width: "300px", height: "200px" }}
         />
         <br />
