@@ -13,7 +13,8 @@ export default function Home() {
       </Head>
       <CssBaseline />
       <Header />
-        <h1>Help Page</h1>
+        <h1>使い方</h1>
+
       <Footer />
       <Copyright />
     </div>
