@@ -80,44 +80,44 @@ const WallPaper = () => {
       <GridContainer>
         <GridItem xs={3}>
           <div>
-            <h1>Name</h1>
-            <h2>Hokkaido University</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h1 className={classes.name}>名前 太郎</h1>
+            <h2 className={classes.affiliation}>Hokkaido University</h2>
+            <p className={classes.paragraph}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
         </GridItem>
         <GridItem xs={6}>
           <div>
-            <h1>Uoooooooooo Hoooooooo!!</h1>
+            <h1 className={classes.phrase}>Uoooooooooo Hoooooooo!!</h1>
           </div>
         </GridItem>
         <GridItem xs={3}>
           <div>
             <div>
-              <h2><FaReact /><span>React</span></h2>
+              <h2 className={classes.techStackTop}><FaReact /><span>React</span></h2>
               <div className={classes.percentBar}></div>
             </div>
             <div>
-              <h2><FaReact /><span>React</span></h2>
+              <h2 className={classes.techStack}><FaReact /><span>React</span></h2>
               <div className={classes.percentBar}></div>
             </div>
             <div>
-              <h2><FaReact /><span>React</span></h2>
+              <h2 className={classes.techStack}><FaReact /><span>React</span></h2>
               <div className={classes.percentBar}></div>
             </div>
             <div>
-              <h2><FaReact /><span>React</span></h2>
+              <h2 className={classes.techStack}><FaReact /><span>React</span></h2>
               <div className={classes.percentBar}></div>
             </div>
             <div>
-              <h2><FaReact /><span>React</span></h2>
+              <h2 className={classes.techStack}><FaReact /><span>React</span></h2>
               <div className={classes.percentBar}></div>
             </div>
           </div>
           <div>
             <div>
-              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
-              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
-              <h2><FaTwitterSquare /><span>@unkounko</span></h2>
+              <h2 className={classes.snsAccount}><FaTwitterSquare /><span>@unkounko</span></h2>
+              <h2 className={classes.snsAccount}><FaTwitterSquare /><span>@unkounko</span></h2>
+              <h2 className={classes.snsAccount}><FaTwitterSquare /><span>@unkounko</span></h2>
             </div>
           </div>
 
