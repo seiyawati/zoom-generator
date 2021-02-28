@@ -33,27 +33,23 @@ const useStyles = makeStyles((theme) => ({
 const cards = [
   {
     name: "パターン1",
-    image: "",
+    image: "../static/example.png",
+    description: "パターン1の説明です。",
   },
   {
     name: "パターン2",
-    image: "",
+    image: "../static/example.png",
+    description: "パターン2の説明です。",
   },
   {
     name: "パターン3",
-    image: "",
+    image: "../static/example.png",
+    description: "パターン3の説明です。",
   },
   {
     name: "パターン4",
-    image: "",
-  },
-  {
-    name: "パターン5",
-    image: "",
-  },
-  {
-    name: "パターン6",
-    image: "",
+    image: "../static/example.png",
+    description: "パターン4の説明です。",
   },
 ];
 
@@ -65,11 +61,11 @@ export default function Demo() {
       {/* End hero unit */}
       <Grid container spacing={5}>
         {cards.map((card) => (
-          <Grid item key={card} xs={12} sm={6} md={4}>
+          <Grid item key={card} xs={12} sm={6} md={6}>
             <Card className={classes.card}>
               <CardMedia
                 className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
+                image={card.image}
                 title="Image title"
               />
               <CardContent className={classes.cardContent}>
@@ -77,8 +73,7 @@ export default function Demo() {
                   {card.name}
                 </Typography>
                 <Typography>
-                  This is a media card. You can use this section to describe the
-                  content.
+                  {card.description}
                 </Typography>
               </CardContent>
               <CardActions>
