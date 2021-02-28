@@ -10,7 +10,7 @@ export default [
         icon: <FaReact />
     },
     {
-        name: "Pyhton",
+        name: "Python",
         icon: <FaPython />
     },
     {
