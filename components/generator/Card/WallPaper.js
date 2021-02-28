@@ -124,7 +124,7 @@ const WallPaper = () => {
         </GridItem>
       </GridContainer>
     </div>
-    <button onClick={handleClick}>download</button>
+    <button onClick={handleClick} className={classes.downloadButton}>download</button>
     </>
   );
 };

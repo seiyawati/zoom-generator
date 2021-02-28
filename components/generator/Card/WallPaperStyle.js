@@ -5,6 +5,8 @@ const styles = {
     color: 'white',
     fontFamily: 'sans-serif', // google fonts をここで使える？
     fontSize:'30px',
+    //backgroundImage:linearGradient('-90deg', '#fff 50%', 'transparent 50%'),
+    //backgroundSize: '14px 14px',
   },
   name: {
     fontSize:'55px',
@@ -54,6 +56,14 @@ const styles = {
     margin:"1em 0",
     //marginLeft:"20px",
     //textAlign: center  //center is not defined
+  },
+  downloadButton: {
+    fontSize:'20px',
+    marginTop:"20px",
+    //margin:'20px 0 0 auto', //autoが効かない
+    color:'#0E5D5D',
+    padding:'0.5rem',
+    //borderColor:'lightgray', //形が崩れる
   },
 }
 export default styles
