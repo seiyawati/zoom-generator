@@ -33,22 +33,22 @@ const useStyles = makeStyles((theme) => ({
 const cards = [
   {
     name: "パターン1",
-    image: "../static/example.png",
+    image: "../static/Template1.png",
     description: "パターン1の説明です。",
   },
   {
     name: "パターン2",
-    image: "../static/example.png",
+    image: "../static/Template2.png",
     description: "パターン2の説明です。",
   },
   {
     name: "パターン3",
-    image: "../static/example.png",
+    image: "../static/Template3.png",
     description: "パターン3の説明です。",
   },
   {
     name: "パターン4",
-    image: "../static/example.png",
+    image: "../static/Template4.png",
     description: "パターン4の説明です。",
   },
 ];

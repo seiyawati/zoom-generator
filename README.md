@@ -3,10 +3,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Landing page
 /pages/index.js
 
-## genelator
-/pages/genelator/...
+## generator
+/pages/generator/...
 
-## othet components
+## other components
 /components/...
 
 ## image files

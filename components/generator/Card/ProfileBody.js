@@ -4,26 +4,27 @@ import { getProfile } from 'components/generator/store'
 import { useRecoilValue } from 'recoil'
 // material ui components
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import GridItem from "components/generator/TimComponents/components/Grid/GridItem";
 
 const styles = {
   main: {
     padding: '1rem',
     paddingRight: '0.2rem',
-    paddingTop: '2.5rem',
+    paddingTop: 0
   },
   name: {
-    fontSize: '1.9em'
+    fontSize: '3.5em',
+    paddingBottom: 0,
+    marginBottom: 0
   },
   affiliation: {
-    fontSize: '1.9em'
+    fontSize: '2em'
   },
   description: {
-    fontSize: '1.2em',
+    fontSize: '1.6em',
   },
   freeSpace: {
+    fontSize: '1.5em',
     justifyItems: 'center'
   }
 }
@@ -39,7 +40,7 @@ export default function ProfileBody() {
     <GridItem xs={4}>
       <div className={classes.main}>
         <h1 className={classes.name}>
-          <span style={{ fontSize: '0.9em'}}>名前:</span><br/>
+          <span style={{ fontSize: '0.5em'}}>名前:</span><br/>
           {profile.firstName} {profile.lastName}
         </h1>
         <h1 className={classes.affiliation}>

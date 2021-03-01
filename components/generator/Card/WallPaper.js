@@ -16,6 +16,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridItem from "components/generator/TimComponents/components/Grid/GridItem";
 import GridContainer from "components/generator/TimComponents/components/Grid/GridContainer";
 import styles from 'components/generator/Card/WallPaperStyle'
+import RegularButton from 'components/generator/TimComponents/components/CustomButtons/Button'
 
 
 const useStyles = makeStyles(styles);
@@ -65,7 +66,13 @@ const WallPaper = () => {
         </GridItem>
       </GridContainer>
     </div>
-    <button onClick={handleClick}>download</button>
+    <div className={classes.downloadButton}>
+      <RegularButton
+        color='info'
+        onClick={handleClick}>
+          download
+        </RegularButton>
+    </div>
     </>
   );
 };

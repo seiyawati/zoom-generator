@@ -7,10 +7,11 @@ import { backgroundStyle } from 'components/generator/store'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import RegularButton from 'components/generator/TimComponents/components/CustomButtons/Button'
+import IconButton from '@material-ui/core/IconButton'
 // react icons
-import { BiUpArrow, BiDownArrow, BiTrash } from 'react-icons/bi'
+import { AiFillCheckCircle } from 'react-icons/ai'
 import styles from '../Card/WallPaperStyle';
+import GridContainer from '../TimComponents/components/Grid/GridContainer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,6 +22,21 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
+  promotion: {
+    width: '100%',
+    height: '2rem',
+    borderRadius: '0.3rem',
+    textAlign: 'center',
+  },
+  style: {
+    margin: '0 auto',
+    paddingTop: '0.4rem'
+  },
+  icon: {
+    position: 'relative',
+    right: '0.7rem',
+    bottom: '0.4rem'
+  }
 }));
 
 
@@ -34,20 +50,24 @@ const BackgroundList = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-      <Grid container spacing={2} justify='center'>
+      <Grid container spacing={1} justify='center'>
         {Object.keys(backgroundData).map((key) => {
           const style = backgroundData[key]
           return (
-            <Grid item xs={4} key={key}>
-              <Paper className={classes.paper}>
-                <div style={style}>
-                  <p>Style</p>
-                  <button onClick={(e) => handleSelect(e, key)}>
-                    Select
-                  </button>
-                </div>
-              </Paper>
-            </Grid>
+            <>
+                <Grid item xs={4}>
+                  <div className={classes.promotion} style={style}>
+                    <p className={classes.style}>Style</p>
+                  </div>
+                </Grid>
+                <Grid item xs={2}>
+                  <div className={classes.icon}>
+                    <IconButton onClick={(e) => handleSelect(e, key)}>
+                      <AiFillCheckCircle  color='green'/>
+                    </IconButton>
+                  </div>
+                </Grid>
+            </>
           )
         })}
       </Grid>

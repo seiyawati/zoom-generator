@@ -30,7 +30,7 @@ const style = {
   percentBar: {
     height: '10px',
     borderRadius: '1em',
-    backgroundColor: '#75d5fd'
+    backgroundColor: '#303f9f',
   }
 }
 
@@ -42,7 +42,7 @@ export default function SkillListBody() {
   const classes = useStyles()
 
   return (
-    <div>
+    <div style={{ marginTop: '2rem'}}>
       <GridContainer>
       {skill.map(({ name, icon }) => {
               const level = skillLevel[name] * 9
