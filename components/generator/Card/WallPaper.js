@@ -2,22 +2,19 @@ import React from "react";
 // react icons
 
 // recoil
-import {
-  getBackgorundStyle,
-} from "components/generator/store";
+import { getBackgorundStyle } from "components/generator/store";
 import { useRecoilValue } from "recoil";
 // html to canvas
 import html2canvas from "html2canvas";
 // material ui core
-import ProfileBody from './ProfileBody'
-import SkillListBody from './SkillListBody'
-import SocialBody from './SocialBody'
+import ProfileBody from "./ProfileBody";
+import SkillListBody from "./SkillListBody";
+import SocialBody from "./SocialBody";
 import { makeStyles } from "@material-ui/core/styles";
 import GridItem from "components/generator/TimComponents/components/Grid/GridItem";
 import GridContainer from "components/generator/TimComponents/components/Grid/GridContainer";
-import styles from 'components/generator/Card/WallPaperStyle'
-import RegularButton from 'components/generator/TimComponents/components/CustomButtons/Button'
-
+import styles from "components/generator/Card/WallPaperStyle";
+import RegularButton from "components/generator/TimComponents/components/CustomButtons/Button";
 
 const useStyles = makeStyles(styles);
 
@@ -53,26 +50,24 @@ const WallPaper = () => {
   };
 
   const classes = useStyles();
-  const backgroundStyle = useRecoilValue(getBackgorundStyle)
+  const backgroundStyle = useRecoilValue(getBackgorundStyle);
 
   return (
     <>
-    <div id='wall-paper' className={classes.main} style={backgroundStyle}>
-      <GridContainer>
-        <ProfileBody />
-        <GridItem xs={3}>
-          <SkillListBody />
-          <SocialBody />
-        </GridItem>
-      </GridContainer>
-    </div>
-    <div className={classes.downloadButton}>
-      <RegularButton
-        color='info'
-        onClick={handleClick}>
+      <div id="wall-paper" className={classes.main} style={backgroundStyle}>
+        <GridContainer>
+          <ProfileBody />
+          <GridItem xs={3}>
+            <SkillListBody />
+            <SocialBody />
+          </GridItem>
+        </GridContainer>
+      </div>
+      <div className={classes.downloadButton}>
+        <RegularButton color="info" onClick={handleClick}>
           download
         </RegularButton>
-    </div>
+      </div>
     </>
   );
 };
