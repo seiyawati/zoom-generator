@@ -1,8 +1,7 @@
 const styles = {
   main: {
     width: '100%',
-    height: 'calc(75vw * 0.5625)',
-    backgroundColor: '#444444',
+    backgroundColor: '#0097A7',
     color: 'white',
     fontFamily: 'sans-serif', // google fonts をここで使える？
     overflowWrap: 'break-word',
@@ -14,5 +13,4 @@ const styles = {
     marginTop: '1rem',
   }
 }
-
 export default styles
